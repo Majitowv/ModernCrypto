@@ -1,0 +1,75 @@
+.browse {
+  padding: 80px 0;
+  text-align: center;
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    span {
+      color: #6c63ff;
+    }
+  }
+  p {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_up {
+      display: flex;
+      gap: 20px;
+    }
+    &_down {
+      display: flex;
+      gap: 20px;
+    }
+    button {
+      border: 1.5px solid;
+
+      border-image-source: linear-gradient(
+        99.94deg,
+        #e50aa7 -5.11%,
+        rgba(255, 23, 189, 0) 110.2%
+      );
+
+      padding: 12px;
+      width: 260px;
+      border: 2px solid #e50aa7;
+      border-radius: 10px;
+      background: transparent;
+      font-family: Helvetica;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      margin: 50px auto 0;
+      display: block;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}

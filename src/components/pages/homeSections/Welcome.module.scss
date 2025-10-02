@@ -1,0 +1,111 @@
+.welcome {
+  padding: 150px 0 ;
+  .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_left {
+      h1 {
+        font-family: Axiforma;
+        font-weight: 900;
+        font-style: Black;
+        font-size: 50px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        color: white;
+        margin-bottom: 15px;
+      }
+      span {
+        font-family: Axiforma;
+        font-weight: 300;
+        font-style: Light Italic;
+        font-size: 50px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        color: #1ee0e1;
+      }
+      p {
+        font-family: Helvetica;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        margin-bottom: 30px;
+      }
+      button {
+        padding: 12px;
+        width: 180px;
+        background: linear-gradient(103.84deg, #df1cff -25.59%, #ea0070 138%);
+        border: none;
+        border-radius: 10px;
+        font-family: Helvetica;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        margin-bottom: 100px;
+      }
+      .zi {
+        position: absolute;
+        left: 420px;
+        top: 150px;
+      }
+      .Nico {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        &_first {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin-bottom: 25px;
+          h2 {
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 28px;
+            line-height: 118%;
+            letter-spacing: 0%;
+          }
+        }
+        &_content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          h4 {
+            font-family: Helvetica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 15px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: rgb(189, 189, 189);
+            margin-bottom: 10px;
+          }
+          h3 {
+            font-family: Axiforma;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 118%;
+            letter-spacing: 0%;
+            color: white;
+          }
+        }
+      }
+    }
+    &_right {
+      .glav {
+        position: absolute;
+        right: -140px;
+        top: -190px;
+      }
+      .glavto {
+        position: absolute;
+        left: 740px;
+        bottom: -20px;
+      }
+    }
+  }
+}

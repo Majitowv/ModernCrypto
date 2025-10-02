@@ -1,0 +1,46 @@
+.header {
+  padding: 30px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(103.84deg, #df1cff -25.59%, #ea0070 138%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 36px;
+    }
+    button {
+      padding: 12px;
+      width: 160px;
+      border: 2px solid #e50aa7;
+      border-radius: 10px;
+      background: transparent;
+      font-family: Helvetica;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+    &_nav {
+      display: flex;
+      align-content: center;
+      gap: 50px;
+      a {
+        font-family: Helvetica;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        line-height: 118%;
+        letter-spacing: 0%;
+        color: #ffffff6e;
+      }
+      a:focus {
+        color: white;
+      }
+    }
+  }
+}

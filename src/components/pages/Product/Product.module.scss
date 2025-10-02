@@ -1,0 +1,204 @@
+.product {
+  padding: 150px 0;
+  button {
+    padding: 12px;
+    width: 320px;
+    border: 2px solid #e50aa7;
+    border-radius: 10px;
+    background: transparent;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 50px auto 0;
+    display: block;
+  }
+
+  &_nav {
+    h1 {
+      font-weight: 900;
+      font-style: Black;
+      font-size: 40px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-align: center;
+      margin-bottom: 20px;
+      span {
+        font-weight: 300;
+        font-style: Light Italic;
+        font-size: 40px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #1ee0e1;
+      }
+    }
+    &_sort {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      h3 {
+        font-weight: 500; /* Medium = 500 */
+        font-style: normal; /* Исправлено с Medium */
+        font-size: 22px;
+        line-height: 118%;
+        letter-spacing: 0%;
+        color: #cfcfcf;
+        cursor: pointer;
+        transition: color 0.3s, border-bottom 0.3s;
+        display: inline-block; /* Для underline анимации */
+        border-bottom: 2px solid transparent; /* чтобы не прыгало */
+      }
+
+      h3:hover,
+      h3:focus {
+        color: white;
+        border-bottom: 2px solid white; /* подчеркивание при hover/focus */
+        outline: none; /* убираем обводку при фокусе */
+      }
+       .item {
+      position: relative;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1;
+
+      .bgImg {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    }
+  }
+  .content {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &_card {
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+      gap: 80px;
+    }
+    &_cart {
+      position: relative;
+      padding: 20px;
+      width: 360px;
+      height: 500px;
+      background: #ffffff08;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      .like {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 5px;
+        width: 45px;
+        height: 42px;
+        background: #FFFFFF17;
+        top: 30px;
+        right: 30px;
+        h3 {
+          font-size: 30px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: height 0.3s;
+      }
+      .cart_text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        transition: transform 0.3s;
+
+        h1 {
+          font-weight: 600;
+          font-size: 22px;
+          color: #fff;
+        }
+
+        .rating {
+          display: flex;
+          align-items: center;
+          h3 {
+            font-weight: 600;
+            font-size: 22px;
+            span {
+              color: rgb(139, 149, 179);
+            }
+          }
+        }
+      }
+      .stars {
+        display: flex;
+        gap: 4px;
+        margin-top: 5px;
+
+        span {
+          font-size: 16px;
+        }
+
+        .full {
+          color: gold;
+        }
+
+        .empty {
+          color: #555;
+        }
+      }
+      button {
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background: linear-gradient(103.84deg, #df1cff -25.59%, #ea0070 138%);
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 15px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s, transform 0.3s;
+        transform: translateY(10px);
+      }
+      &:hover {
+        img {
+          height: 340px;
+        }
+        .cart_text {
+          transform: translateY(-10px);
+        }
+        button {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+#touch {
+  padding: 100px 0;
+  .touch {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-weight: 800;
+      font-style: ExtraBold;
+      font-size: 72px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: white;
+    }
+    p {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    input {
+        padding: 16px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        font-size: 16px;
+        background: #0D0D2D;
+        width: 650px;
+        margin-bottom: 30px;
+    }
+     button {
+        padding: 12px;
+        width: 160px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background: linear-gradient(103.84deg, #df1cff -25.59%, #ea0070 138%);
+        font-weight: 700;
+        font-size: 16px;
+      }
+  }
+}
