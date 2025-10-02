@@ -1,12 +1,10 @@
-
 import React from "react";
 import styles from "./Nft.module.scss";
 import Image from "next/image";
-import nft1 from "../../../assets/images/nftcard1.png"
-import nft2 from "../../../assets/images/nftcrad2.png"
-import nft3 from "../../../assets/images/nftcard3.png"
-import nft4 from "../../../assets/images/nstcard4.png"
-
+import nft1 from "../../../assets/images/nftcard1.png";
+import nft2 from "../../../assets/images/nftcrad2.png";
+import nft3 from "../../../assets/images/nftcard3.png";
+import nft4 from "../../../assets/images/nstcard4.png";
 
 const Info = () => {
   return (
@@ -18,7 +16,7 @@ const Info = () => {
           </div>
           <div className={styles.infoSubtitle}>
             <h2>
-              How to <i>Create & Sell</i> Your NFT Files.
+              How to <i>Create &amp; Sell</i> Your NFT Files.
             </h2>
           </div>
           <div className={styles.infoBlock}>
@@ -28,7 +26,7 @@ const Info = () => {
                 <h1>Set Up Your Wallet</h1>
                 <p>
                   Connect your wallet to Nico by clicking the wallet icon in the
-                  top right corner after you've set it up.
+                  top right corner after you&apos;ve set it up.
                 </p>
               </div>
             </div>
@@ -56,12 +54,12 @@ const Info = () => {
             </div>
 
             <div className={styles.infoBlockItem}>
-              <Image src={nft4  } alt="coin" />
+              <Image src={nft4} alt="coin" />
               <div className={styles.infoBlocktext}>
                 <h1>Put Them Up for Sale</h1>
                 <p>
                   Auctions, fixed-price listings, and declining-price listings
-                  are all options. You decide how you'd like to sell your NFTs.
+                  are all options. You decide how you&apos;d like to sell your NFTs.
                 </p>
               </div>
             </div>
